@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "dev": "bun run ./index.html --hot",
+    "build": "bun build ./index.html --outdir dist"
+  },
+  "dependencies": {
+    "marked": "^15.0.12"
+  }
+}

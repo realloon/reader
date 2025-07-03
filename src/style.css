@@ -1,0 +1,64 @@
+:root {
+  font-size: 16px;
+  --color-font: #000000cc;
+}
+
+body {
+  color: var(--color-font);
+  fill: var(--color-font);
+
+  line-height: 1;
+
+  margin: 64px 32px;
+}
+
+button {
+  --width: 20rem;
+  --border-width: 4px;
+  --transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  top: 64px;
+  left: calc(50vw - var(--width) / 2 - var(--border-width));
+
+  width: var(--width);
+  aspect-ratio: 16 / 10;
+  background-color: transparent;
+  padding: 0;
+  border: var(--border-width) dashed var(--color-font);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transition);
+
+  .icon {
+    width: 48px;
+    aspect-ratio: 1 / 1;
+    transition: var(--transition);
+  }
+}
+
+button.hover {
+  top: 2rem;
+  left: 2rem;
+
+  width: 48px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  box-shadow: 0 6px 10px #00000012;
+  border: 0;
+
+  .icon {
+    width: 24px;
+  }
+}
+
+article {
+  max-width: 40rem;
+  margin-inline: auto;
+
+  font-family: 'LXGW WenKai';
+  line-height: 1.5;
+}
