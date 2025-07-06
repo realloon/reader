@@ -1,4 +1,5 @@
 {
+  "version": "0.1.0",
   "scripts": {
     "dev": "bun run ./index.html --hot",
     "build": "bun build ./index.html --outdir dist"
